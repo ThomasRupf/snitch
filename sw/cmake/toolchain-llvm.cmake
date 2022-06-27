@@ -21,11 +21,14 @@ set(CMAKE_CXX_COMPILER_RANLIB "${CMAKE_RANLIB}")
 ## Compile options
 ##
 add_compile_options(-mcpu=snitch -mcmodel=medany -ffast-math -fno-builtin-printf -fno-common)
+add_compile_options(-fexperimental-new-pass-manager) #for ssr-inference, use new PM
 add_compile_options(-ffunction-sections)
+add_compile_options(-funroll-loops)
 add_compile_options(-Wextra)
 add_compile_options(-static)
-# For SSR register merge we need to disable the scheduler
-add_compile_options(-mllvm -enable-misched=false)
+# Enable SSR Inference ==> currently done per target in sw/SSRInference folder 
+#add_compile_options("SHELL:-mllvm -infer-ssr")
+#add_compile_options("SHELL:-mllvm -snitch-frep-inference") #enable frep loop inference
 # LLD doesn't support relaxation for RISC-V yet
 add_compile_options(-mno-relax)
 add_compile_options(-fopenmp)

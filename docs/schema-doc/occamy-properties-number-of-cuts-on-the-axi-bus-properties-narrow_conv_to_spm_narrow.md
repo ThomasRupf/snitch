@@ -4,7 +4,7 @@
 http://pulp-platform.org/snitch/occamy.schema.json#/properties/cuts/properties/narrow_conv_to_spm_narrow
 ```
 
-narrow -> SPM post atomic adapter
+narrow -> SPM
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                       |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------- |

@@ -1,0 +1,128 @@
+cmake_minimum_required(VERSION 3.13)
+
+# Allow snRuntime to be built as a standalone library.
+if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+    list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../cmake)
+    set(CMAKE_TOOLCHAIN_FILE toolchain-llvm CACHE STRING "Toolchain to use")
+
+    project(SSRInference LANGUAGES C ASM)
+    include(SnitchUtilities)
+
+    add_compile_options(-O3 -g -ffunction-sections)
+
+    # Build the runtime.
+    add_subdirectory(../snRuntime snRuntime)
+endif()
+
+include_directories(include)
+include_directories(${SNRUNTIME_INCLUDE_DIRS})
+
+add_library(linalg src/matmul.c src/summat.c src/scalarprod.c)
+add_library(other src/various.c src/conflict.c src/reverse_conflict.c)
+add_library(benchmarkutil src/benchmark.c)
+
+# Tests
+enable_testing()
+set(SNITCH_TEST_PREFIX SSRInference-)
+link_libraries(linalg)
+link_libraries(other)
+link_libraries(benchmarkutil)
+add_snitch_test_executable(test-sp tests/test_sp.c)
+add_snitch_test_args(test-sp test-sp --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-access tests/test_access.c)
+add_snitch_test_args(test-access test-access --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-size tests/test_size.c)
+add_snitch_test_args(test-size test-size --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-alias tests/test_aliasing.c)
+add_snitch_test_args(test-alias test-alias --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-various tests/test_various.c)
+add_snitch_test_args(test-various test-various --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-conflict tests/test_conflict.c)
+add_snitch_test_args(test-conflict test-conflict --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-reverse-conflict tests/test_reverse_conflict.c)
+add_snitch_test_args(test-reverse-conflict test-reverse-conflict --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-mat tests/test_mat.c)
+add_snitch_test_args(test-mat test-mat --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-gemm tests/gemm.c)
+add_snitch_test_args(test-gemm test-gemm --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-2mm tests/2mm.c)
+add_snitch_test_args(test-2mm test-2mm --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-3mm tests/3mm.c)
+add_snitch_test_args(test-3mm test-3mm --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-2mm-ssrfriendly tests/2mm_ssrfriendly.c)
+add_snitch_test_args(test-2mm-ssrfriendly test-2mm-ssrfriendly --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+add_snitch_test_executable(test-3mm-ssrfriendly tests/3mm_ssrfriendly.c)
+add_snitch_test_args(test-3mm-ssrfriendly test-3mm-ssrfriendly --no-opt-llvm --configuration ${CMAKE_CURRENT_SOURCE_DIR}/../banshee/config/snitch_cluster.yaml)
+
+# Executables
+## tests
+add_snitch_executable(test-sp tests/test_sp.c)
+add_snitch_executable(test-access tests/test_access.c)
+add_snitch_executable(test-size tests/test_size.c)
+add_snitch_executable(test-various tests/test_various.c)
+add_snitch_executable(test-alias tests/test_aliasing.c)
+add_snitch_executable(test-conflict tests/test_conflict.c)
+add_snitch_executable(test-reverse-conflict tests/test_reverse_conflict.c)
+add_snitch_executable(test-mat tests/test_mat.c)
+
+## bench
+#sp
+add_snitch_executable(bench-mini-sp tests/bench_sp.c)
+target_compile_definitions(bench-mini-sp PRIVATE MINI_DATASET)
+add_snitch_executable(bench-small-sp tests/bench_sp.c)
+target_compile_definitions(bench-small-sp PRIVATE SMALL_DATASET)
+add_snitch_executable(bench-medium-sp tests/bench_sp.c)
+target_compile_definitions(bench-medium-sp PRIVATE MEDIUM_DATASET)
+
+#gemm
+add_snitch_executable(bench-mini-gemm tests/gemm.c)
+target_compile_definitions(bench-mini-gemm PRIVATE MINI_DATASET)
+add_snitch_executable(bench-small-gemm tests/gemm.c)
+target_compile_definitions(bench-small-gemm PRIVATE SMALL_DATASET)
+
+add_snitch_executable(bench-mini-restrict-gemm tests/gemm.c)
+target_compile_definitions(bench-mini-restrict-gemm PRIVATE MINI_DATASET IS_RESTRICTED)
+add_snitch_executable(bench-small-restrict-gemm tests/gemm.c)
+target_compile_definitions(bench-small-restrict-gemm PRIVATE SMALL_DATASET IS_RESTRICTED)
+
+#2mm
+add_snitch_executable(bench-mini-2mm tests/2mm.c)
+target_compile_definitions(bench-mini-2mm PRIVATE MINI_DATASET)
+add_snitch_executable(bench-small-2mm tests/2mm.c)
+target_compile_definitions(bench-small-2mm PRIVATE SMALL_DATASET)
+
+add_snitch_executable(bench-mini-restrict-2mm tests/2mm.c)
+target_compile_definitions(bench-mini-restrict-2mm PRIVATE MINI_DATASET IS_RESTRICTED)
+add_snitch_executable(bench-small-restrict-2mm tests/2mm.c)
+target_compile_definitions(bench-small-restrict-2mm PRIVATE SMALL_DATASET IS_RESTRICTED)
+#2mm_ssrfriendly
+add_snitch_executable(bench-mini-2mm-ssrfriendly tests/2mm_ssrfriendly.c)
+target_compile_definitions(bench-mini-2mm-ssrfriendly PRIVATE MINI_DATASET)
+add_snitch_executable(bench-small-2mm-ssrfriendly tests/2mm_ssrfriendly.c)
+target_compile_definitions(bench-small-2mm-ssrfriendly PRIVATE SMALL_DATASET)
+
+add_snitch_executable(bench-mini-restrict-2mm-ssrfriendly tests/2mm_ssrfriendly.c)
+target_compile_definitions(bench-mini-restrict-2mm-ssrfriendly PRIVATE MINI_DATASET IS_RESTRICTED)
+add_snitch_executable(bench-small-restrict-2mm-ssrfriendly tests/2mm_ssrfriendly.c)
+target_compile_definitions(bench-small-restrict-2mm-ssrfriendly PRIVATE SMALL_DATASET IS_RESTRICTED)
+
+#3mm
+add_snitch_executable(bench-mini-3mm tests/3mm.c)
+target_compile_definitions(bench-mini-3mm PRIVATE MINI_DATASET)
+add_snitch_executable(bench-small-3mm tests/3mm.c)
+target_compile_definitions(bench-small-3mm PRIVATE SMALL_DATASET)
+
+add_snitch_executable(bench-mini-restrict-3mm tests/3mm.c)
+target_compile_definitions(bench-mini-restrict-3mm PRIVATE MINI_DATASET IS_RESTRICTED)
+add_snitch_executable(bench-small-restrict-3mm tests/3mm.c)
+target_compile_definitions(bench-small-restrict-3mm PRIVATE SMALL_DATASET IS_RESTRICTED)
+#3mm_ssrfriendly
+add_snitch_executable(bench-mini-3mm-ssrfriendly tests/3mm_ssrfriendly.c)
+target_compile_definitions(bench-mini-3mm-ssrfriendly PRIVATE MINI_DATASET)
+add_snitch_executable(bench-small-3mm-ssrfriendly tests/3mm_ssrfriendly.c)
+target_compile_definitions(bench-small-3mm-ssrfriendly PRIVATE SMALL_DATASET)
+
+add_snitch_executable(bench-mini-restrict-3mm-ssrfriendly tests/3mm_ssrfriendly.c)
+target_compile_definitions(bench-mini-restrict-3mm-ssrfriendly PRIVATE MINI_DATASET IS_RESTRICTED)
+add_snitch_executable(bench-small-restrict-3mm-ssrfriendly tests/3mm_ssrfriendly.c)
+target_compile_definitions(bench-small-restrict-3mm-ssrfriendly PRIVATE SMALL_DATASET IS_RESTRICTED)

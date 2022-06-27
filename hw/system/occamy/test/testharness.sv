@@ -277,17 +277,17 @@ module testharness import occamy_pkg::*; (
 
 
 
-  axi_a48_d64_i8_u5_req_t pcie_axi_req;
-  axi_a48_d64_i8_u5_resp_t pcie_axi_rsp;
+  axi_a48_d64_i8_u9_req_t pcie_axi_req;
+  axi_a48_d64_i8_u9_resp_t pcie_axi_rsp;
 
   tb_memory_axi #(
     .AxiAddrWidth (48),
     .AxiDataWidth (64),
     .AxiIdWidth (8),
-    .AxiUserWidth (6),
+    .AxiUserWidth (10),
     .ATOPSupport (0),
-    .req_t (axi_a48_d64_i8_u5_req_t),
-    .rsp_t (axi_a48_d64_i8_u5_resp_t)
+    .req_t (axi_a48_d64_i8_u9_req_t),
+    .rsp_t (axi_a48_d64_i8_u9_resp_t)
   ) i_pcie_axi_channel (
     .clk_i,
     .rst_ni,
@@ -357,11 +357,16 @@ module testharness import occamy_pkg::*; (
     .test_mode_i (1'b0),
     .chip_id_i ('0),
     .boot_mode_i ('0),
+    .pad_slw_o (),
+    .pad_smt_o (),
+    .pad_drv_o (),
     .uart_tx_o (tx),
     .uart_rx_i (rx),
     .gpio_d_i ('0),
     .gpio_d_o (),
     .gpio_oe_o (),
+    .gpio_puen_o (),
+    .gpio_pden_o (),
     .jtag_trst_ni ('0),
     .jtag_tck_i ('0),
     .jtag_tms_i ('0),
