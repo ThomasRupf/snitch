@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/tests/lto.c
+../../vendor/riscv-opcodes/encoding.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/vendor/riscv-opcodes/encoding.h
+lto_a.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/tests/lto_a.h
+printf.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/tests/printf.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/tests/lto_a.c
+lto_a.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/tests/lto_a.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/tests/lto_a.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/vendor/printf.h
+stdarg.h
+-
+stddef.h
+-
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/vendor/riscv-opcodes/encoding.h
+

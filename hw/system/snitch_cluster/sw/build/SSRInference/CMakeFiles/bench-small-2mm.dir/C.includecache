@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/include/benchmark.h
+snrt.h
+-
+stddef.h
+-
+printf.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/include/printf.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/include/summat.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/tests/2mm.c
+snrt.h
+-
+printf.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/tests/printf.h
+summat.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/tests/summat.h
+benchmark.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/tests/benchmark.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/include/snrt.h
+stddef.h
+-
+stdint.h
+-
+encoding.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/include/encoding.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/vendor/printf.h
+stdarg.h
+-
+stddef.h
+-
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/vendor/riscv-opcodes/encoding.h
+

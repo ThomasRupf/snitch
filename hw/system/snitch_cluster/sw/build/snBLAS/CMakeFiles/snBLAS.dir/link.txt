@@ -1,0 +1,2 @@
+"llvm-ar" cr libsnBLAS.a CMakeFiles/snBLAS.dir/src/axpy.c.o
+"llvm-ranlib" libsnBLAS.a

@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-gemm-ssr.dir/tests/gemm.c.o"
+  "bench-SMALL_DATASET-IS_RESTRICTED-gemm-ssr"
+  "bench-SMALL_DATASET-IS_RESTRICTED-gemm-ssr.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-gemm-ssr.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

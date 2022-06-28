@@ -1,0 +1,2 @@
+"llvm-ar" cr libother-ssr.a CMakeFiles/other-ssr.dir/src/various.c.o CMakeFiles/other-ssr.dir/src/conflict.c.o CMakeFiles/other-ssr.dir/src/reverse_conflict.c.o
+"llvm-ranlib" libother-ssr.a

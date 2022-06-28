@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snBLAS/include/snblas.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snBLAS/src/axpy.c
+snblas.h
+-
+

@@ -1,0 +1,17 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/thomas/Documents/eth/ba/code/all/install/bin/riscv32-unknown-elf-clang 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: unrecognised emulation mode: elf32lriscv
+Supported emulations: elf_x86_64 elf32_x86_64 elf_i386 elf_iamcu elf_l1om elf_k1om i386pep i386pe
+clang-12: error: ld command failed with exit code 1 (use -v to see invocation)
+
+
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+clang version 12.0.1
+Target: riscv32-unknown-unknown-elf
+Thread model: posix
+InstalledDir: /home/thomas/Documents/eth/ba/code/all/install/bin

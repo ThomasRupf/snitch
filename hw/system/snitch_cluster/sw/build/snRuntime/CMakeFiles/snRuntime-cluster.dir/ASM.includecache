@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/src/platforms/rtl/start_snitch.S
+../shared/start_snitch.S
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/src/platforms/shared/start_snitch.S
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/src/platforms/shared/start_snitch.S
+../../start.S
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/src/start.S
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/src/start.S
+

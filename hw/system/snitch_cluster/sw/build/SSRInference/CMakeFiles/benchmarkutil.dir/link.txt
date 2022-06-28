@@ -1,0 +1,2 @@
+"llvm-ar" cr libbenchmarkutil.a CMakeFiles/benchmarkutil.dir/src/benchmark.c.o
+"llvm-ranlib" libbenchmarkutil.a

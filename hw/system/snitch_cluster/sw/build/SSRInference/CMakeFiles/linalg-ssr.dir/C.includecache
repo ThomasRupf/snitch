@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/include/matmul.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/include/scalarprod.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/src/matmul.c
+matmul.h
+-
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/src/scalarprod.c
+scalarprod.h
+-
+printf.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/src/printf.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/src/summat.c
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/vendor/printf.h
+stdarg.h
+-
+stddef.h
+-
+

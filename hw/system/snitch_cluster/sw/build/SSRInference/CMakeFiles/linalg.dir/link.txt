@@ -1,0 +1,2 @@
+"llvm-ar" cr liblinalg.a CMakeFiles/linalg.dir/src/matmul.c.o CMakeFiles/linalg.dir/src/summat.c.o CMakeFiles/linalg.dir/src/scalarprod.c.o
+"llvm-ranlib" liblinalg.a

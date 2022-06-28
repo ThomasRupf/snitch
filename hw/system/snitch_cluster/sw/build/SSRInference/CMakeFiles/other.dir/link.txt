@@ -1,0 +1,2 @@
+"llvm-ar" cr libother.a CMakeFiles/other.dir/src/various.c.o CMakeFiles/other.dir/src/conflict.c.o CMakeFiles/other.dir/src/reverse_conflict.c.o
+"llvm-ranlib" libother.a

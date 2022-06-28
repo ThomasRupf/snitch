@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-3mm.dir/tests/3mm.c.o"
+  "bench-SMALL_DATASET-IS_RESTRICTED-3mm"
+  "bench-SMALL_DATASET-IS_RESTRICTED-3mm.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-3mm.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

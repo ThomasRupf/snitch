@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/include/snrt.h
+stddef.h
+-
+stdint.h
+-
+encoding.h
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/include/encoding.h
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/tests/fp16alt_computation_scalar.c
+snrt.h
+-
+
+/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/vendor/riscv-opcodes/encoding.h
+
