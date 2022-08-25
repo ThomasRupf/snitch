@@ -612,13 +612,13 @@ Disassembly of section .text:
 800006d0: 23 ac d5 04  	sw	a3, 88(a1)
 
 800006d4 <.LBB0_21>:
-800006d4: 97 28 00 00  	auipc	a7, 2
-800006d8: 93 88 48 74  	addi	a7, a7, 1860
+800006d4: 17 28 00 00  	auipc	a6, 2
+800006d8: 13 08 48 74  	addi	a6, a6, 1860
 800006dc: 93 05 10 00  	addi	a1, zero, 1
 
 800006e0 <.LBB0_22>:
-800006e0: 17 28 00 00  	auipc	a6, 2
-800006e4: 13 08 08 74  	addi	a6, a6, 1856
+800006e0: 97 28 00 00  	auipc	a7, 2
+800006e4: 93 88 08 74  	addi	a7, a7, 1856
 ;     for (int i = 0; i < n; i++){
 800006e8: 63 48 b5 10  	blt	a0, a1, 0x800007f8 <.LBB0_23+0x10c>
 
@@ -678,20 +678,20 @@ Disassembly of section .text:
 800007a0: 93 05 05 00  	mv	a1, a0
 800007a4: 63 64 d6 00  	bltu	a2, a3, 0x800007ac <.LBB0_23+0xc0>
 800007a8: 93 05 b0 00  	addi	a1, zero, 11
-800007ac: 53 02 00 d2  	fcvt.d.w	ft4, zero
+800007ac: 53 01 00 d2  	fcvt.d.w	ft2, zero
 800007b0: 93 06 03 00  	mv	a3, t1
 ; 		r += A[i];
-800007b4: 07 b1 06 00  	fld	ft2, 0(a3)
-800007b8: 53 72 41 02  	fadd.d	ft4, ft2, ft4
+800007b4: 87 b1 06 00  	fld	ft3, 0(a3)
+800007b8: 53 f1 21 02  	fadd.d	ft2, ft3, ft2
 ; 		if (i >= 10) break;
 800007bc: 93 85 f5 ff  	addi	a1, a1, -1
 800007c0: 93 86 86 00  	addi	a3, a3, 8
 800007c4: e3 98 05 fe  	bnez	a1, 0x800007b4 <.LBB0_23+0xc8>
-800007c8: 87 b1 08 00  	fld	ft3, 0(a7)
-800007cc: 87 32 08 00  	fld	ft5, 0(a6)
+800007c8: 07 b2 08 00  	fld	ft4, 0(a7)
+800007cc: 87 31 08 00  	fld	ft3, 0(a6)
 ;     double r_sp = scalarprod(v, v, n); //aliasing reads should be okay 
-800007d0: 53 f1 30 02  	fadd.d	ft2, ft1, ft3
-800007d4: d3 70 52 02  	fadd.d	ft1, ft4, ft5
+800007d0: 53 71 41 02  	fadd.d	ft2, ft2, ft4
+800007d4: d3 f0 30 02  	fadd.d	ft1, ft1, ft3
 800007d8: 53 02 00 d2  	fcvt.d.w	ft4, zero
 ;         r += a[i] * b[i];
 800007dc: 87 32 03 00  	fld	ft5, 0(t1)
@@ -703,25 +703,25 @@ Disassembly of section .text:
 ; double abs(double x){ return x < 0.0 ? -x : x; }
 800007f0: d3 71 32 02  	fadd.d	ft3, ft4, ft3
 800007f4: 6f 00 40 01  	j	0x80000808 <.LBB0_24>
-800007f8: 07 b1 08 00  	fld	ft2, 0(a7)
-800007fc: 87 30 08 00  	fld	ft1, 0(a6)
+800007f8: 87 30 08 00  	fld	ft1, 0(a6)
+800007fc: 07 b1 08 00  	fld	ft2, 0(a7)
 80000800: 53 00 00 d2  	fcvt.d.w	ft0, zero
-80000804: d3 01 21 22  	fmv.d	ft3, ft2
+80000804: d3 81 10 22  	fmv.d	ft3, ft1
 
 80000808 <.LBB0_24>:
 80000808: 17 25 00 00  	auipc	a0, 2
 8000080c: 13 05 85 62  	addi	a0, a0, 1576
 80000810: 07 32 05 00  	fld	ft4, 0(a0)
 ; double abs(double x){ return x < 0.0 ? -x : x; }
-80000814: 53 21 21 22  	fabs.d	ft2, ft2
+80000814: d3 a0 10 22  	fabs.d	ft1, ft1
 ;     double error = abs(r_norm - r_norm_true) + abs(r_notcf - r_notcf_true) + abs(r_skip - r_skip_true) + abs(r_sp - r_sp_true);
 80000818: 53 70 40 02  	fadd.d	ft0, ft0, ft4
 ; double abs(double x){ return x < 0.0 ? -x : x; }
 8000081c: 53 20 00 22  	fabs.d	ft0, ft0
-80000820: d3 a0 10 22  	fabs.d	ft1, ft1
+80000820: 53 21 21 22  	fabs.d	ft2, ft2
 80000824: d3 a1 31 22  	fabs.d	ft3, ft3
 ;     double error = abs(r_norm - r_norm_true) + abs(r_notcf - r_notcf_true) + abs(r_skip - r_skip_true) + abs(r_sp - r_sp_true);
-80000828: d3 70 11 02  	fadd.d	ft1, ft2, ft1
+80000828: d3 f0 20 02  	fadd.d	ft1, ft1, ft2
 8000082c: 53 f0 00 02  	fadd.d	ft0, ft1, ft0
 80000830: 53 74 30 02  	fadd.d	fs0, ft0, ft3
 ;     printf("error = %f\n", error);
@@ -777,7 +777,7 @@ Disassembly of section .text:
 800008c4: 13 01 01 03  	addi	sp, sp, 48
 800008c8: 67 80 00 00  	ret
 
-800008cc <_vsnprintf.llvm.17592004524093383706>:
+800008cc <_vsnprintf.llvm.11632292163828655644>:
 ; {
 800008cc: 13 01 01 f9  	addi	sp, sp, -112
 800008d0: 23 26 11 06  	sw	ra, 108(sp)
@@ -1785,7 +1785,7 @@ Disassembly of section .text:
 800014bc: 13 01 01 07  	addi	sp, sp, 112
 800014c0: 67 80 00 00  	ret
 
-800014c4 <_out_char.llvm.17592004524093383706>:
+800014c4 <_out_char.llvm.11632292163828655644>:
 ;   if (character) {
 800014c4: 63 04 05 0a  	beqz	a0, 0x8000156c <.LBB2_8+0x18>
 ;     asm("csrr %0, mhartid" : "=r"(hartid));

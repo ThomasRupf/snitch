@@ -1889,7 +1889,7 @@ Disassembly of section .text:
 800019c8: 13 01 01 03  	addi	sp, sp, 48
 800019cc: 67 80 00 00  	ret
 
-800019d0 <_vsnprintf.llvm.17592004524093383706>:
+800019d0 <_vsnprintf.llvm.11632292163828655644>:
 ; {
 800019d0: 13 01 01 f9  	addi	sp, sp, -112
 800019d4: 23 26 11 06  	sw	ra, 108(sp)
@@ -2897,7 +2897,7 @@ Disassembly of section .text:
 800025c0: 13 01 01 07  	addi	sp, sp, 112
 800025c4: 67 80 00 00  	ret
 
-800025c8 <_out_char.llvm.17592004524093383706>:
+800025c8 <_out_char.llvm.11632292163828655644>:
 ;   if (character) {
 800025c8: 63 04 05 0a  	beqz	a0, 0x80002670 <.LBB2_8+0x18>
 ;     asm("csrr %0, mhartid" : "=r"(hartid));

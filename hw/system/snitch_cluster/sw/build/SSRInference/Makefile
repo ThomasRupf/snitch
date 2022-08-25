@@ -141,6 +141,156 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+bench-SMALL_DATASET--sp-unroll16-ssr: SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule
+
+.PHONY : bench-SMALL_DATASET--sp-unroll16-ssr
+
+# fast build rule for target.
+bench-SMALL_DATASET--sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/build
+.PHONY : bench-SMALL_DATASET--sp-unroll16-ssr/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/rule
+
+# Convenience name for target.
+bench-SMALL_DATASET--sp-unroll16: SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/rule
+
+.PHONY : bench-SMALL_DATASET--sp-unroll16
+
+# fast build rule for target.
+bench-SMALL_DATASET--sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/build
+.PHONY : bench-SMALL_DATASET--sp-unroll16/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr: SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+.PHONY : run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr
+
+# fast build rule for target.
+run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build
+.PHONY : run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr: SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+.PHONY : bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr
+
+# fast build rule for target.
+bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build
+.PHONY : bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16: SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+.PHONY : run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16
+
+# fast build rule for target.
+run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/build
+.PHONY : run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+# Convenience name for target.
+bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16: SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+.PHONY : bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16
+
+# fast build rule for target.
+bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/build
+.PHONY : bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-MINI_DATASET--sp-unroll16-ssr: SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16-ssr.dir/rule
+
+.PHONY : run-rtl-bench-MINI_DATASET--sp-unroll16-ssr
+
+# fast build rule for target.
+run-rtl-bench-MINI_DATASET--sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16-ssr.dir/build
+.PHONY : run-rtl-bench-MINI_DATASET--sp-unroll16-ssr/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+bench-MINI_DATASET--sp-unroll16-ssr: SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/rule
+
+.PHONY : bench-MINI_DATASET--sp-unroll16-ssr
+
+# fast build rule for target.
+bench-MINI_DATASET--sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/build
+.PHONY : bench-MINI_DATASET--sp-unroll16-ssr/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-MINI_DATASET--sp-unroll16: SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16.dir/rule
+
+.PHONY : run-rtl-bench-MINI_DATASET--sp-unroll16
+
+# fast build rule for target.
+run-rtl-bench-MINI_DATASET--sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--sp-unroll16.dir/build
+.PHONY : run-rtl-bench-MINI_DATASET--sp-unroll16/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/rule
+
+# Convenience name for target.
+bench-MINI_DATASET--sp-unroll16: SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/rule
+
+.PHONY : bench-MINI_DATASET--sp-unroll16
+
+# fast build rule for target.
+bench-MINI_DATASET--sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/build
+.PHONY : bench-MINI_DATASET--sp-unroll16/fast
+
+# Convenience name for target.
 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-mm-ssr.dir/rule:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-mm-ssr.dir/rule
 .PHONY : SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-mm-ssr.dir/rule
@@ -1041,6 +1191,21 @@ run-rtl-test-SSRInference-test-3mm/fast:
 .PHONY : run-rtl-test-SSRInference-test-3mm/fast
 
 # Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr: SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr.dir/rule
+
+.PHONY : run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr
+
+# fast build rule for target.
+run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr.dir/build
+.PHONY : run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr/fast
+
+# Convenience name for target.
 SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-3mm.dir/rule:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-3mm.dir/rule
 .PHONY : SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET-IS_RESTRICTED-3mm.dir/rule
@@ -1099,6 +1264,21 @@ run-rtl-test-SSRInference-test-sp: SSRInference/CMakeFiles/run-rtl-test-SSRInfer
 run-rtl-test-SSRInference-test-sp/fast:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-test-SSRInference-test-sp.dir/build.make SSRInference/CMakeFiles/run-rtl-test-SSRInference-test-sp.dir/build
 .PHONY : run-rtl-test-SSRInference-test-sp/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr: SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+.PHONY : bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr
+
+# fast build rule for target.
+bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build
+.PHONY : bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast
 
 # Convenience name for target.
 SSRInference/CMakeFiles/run-rtl-test-alias-ssr.dir/rule:
@@ -1476,6 +1656,21 @@ run-rtl-test-SSRInference-test-mat/fast:
 .PHONY : run-rtl-test-SSRInference-test-mat/fast
 
 # Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16: SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+.PHONY : run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16
+
+# fast build rule for target.
+run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/build
+.PHONY : run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16/fast
+
+# Convenience name for target.
 SSRInference/CMakeFiles/test-gemm-ssr.dir/rule:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/test-gemm-ssr.dir/rule
 .PHONY : SSRInference/CMakeFiles/test-gemm-ssr.dir/rule
@@ -1534,6 +1729,21 @@ run-rtl-bench-SMALL_DATASET--2mm: SSRInference/CMakeFiles/run-rtl-bench-SMALL_DA
 run-rtl-bench-SMALL_DATASET--2mm/fast:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--2mm.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--2mm.dir/build
 .PHONY : run-rtl-bench-SMALL_DATASET--2mm/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr: SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/rule
+
+.PHONY : run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr
+
+# fast build rule for target.
+run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build
+.PHONY : run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr/fast
 
 # Convenience name for target.
 SSRInference/CMakeFiles/other-ssr.dir/rule:
@@ -1896,6 +2106,21 @@ test-SSRInference-test-3mm-ssrfriendly/fast:
 .PHONY : test-SSRInference-test-3mm-ssrfriendly/fast
 
 # Convenience name for target.
+SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16.dir/rule
+
+# Convenience name for target.
+run-rtl-bench-SMALL_DATASET--sp-unroll16: SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16.dir/rule
+
+.PHONY : run-rtl-bench-SMALL_DATASET--sp-unroll16
+
+# fast build rule for target.
+run-rtl-bench-SMALL_DATASET--sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET--sp-unroll16.dir/build
+.PHONY : run-rtl-bench-SMALL_DATASET--sp-unroll16/fast
+
+# Convenience name for target.
 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-ssr.dir/rule:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-ssr.dir/rule
 .PHONY : SSRInference/CMakeFiles/run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-ssr.dir/rule
@@ -1999,6 +2224,21 @@ run-rtl-test-SSRInference-test-access-ssr: SSRInference/CMakeFiles/run-rtl-test-
 run-rtl-test-SSRInference-test-access-ssr/fast:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/run-rtl-test-SSRInference-test-access-ssr.dir/build.make SSRInference/CMakeFiles/run-rtl-test-SSRInference-test-access-ssr.dir/build
 .PHONY : run-rtl-test-SSRInference-test-access-ssr/fast
+
+# Convenience name for target.
+SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+.PHONY : SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+# Convenience name for target.
+bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16: SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/rule
+
+.PHONY : bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16
+
+# fast build rule for target.
+bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16/fast:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/build
+.PHONY : bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16/fast
 
 # Convenience name for target.
 SSRInference/CMakeFiles/run-rtl-bench-MINI_DATASET--3mm-ssr.dir/rule:
@@ -4016,6 +4256,54 @@ tests/bench_sp.c.s:
 	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp.dir/tests/bench_sp.c.s
 .PHONY : tests/bench_sp.c.s
 
+tests/bench_sp_unroll.o: tests/bench_sp_unroll.c.o
+
+.PHONY : tests/bench_sp_unroll.o
+
+# target to build an object file
+tests/bench_sp_unroll.c.o:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.o
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/tests/bench_sp_unroll.c.o
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.o
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/tests/bench_sp_unroll.c.o
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.o
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/tests/bench_sp_unroll.c.o
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.o
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/tests/bench_sp_unroll.c.o
+.PHONY : tests/bench_sp_unroll.c.o
+
+tests/bench_sp_unroll.i: tests/bench_sp_unroll.c.i
+
+.PHONY : tests/bench_sp_unroll.i
+
+# target to preprocess a source file
+tests/bench_sp_unroll.c.i:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.i
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/tests/bench_sp_unroll.c.i
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.i
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/tests/bench_sp_unroll.c.i
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.i
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/tests/bench_sp_unroll.c.i
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.i
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/tests/bench_sp_unroll.c.i
+.PHONY : tests/bench_sp_unroll.c.i
+
+tests/bench_sp_unroll.s: tests/bench_sp_unroll.c.s
+
+.PHONY : tests/bench_sp_unroll.s
+
+# target to generate assembly for a file
+tests/bench_sp_unroll.c.s:
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.s
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET--sp-unroll16.dir/tests/bench_sp_unroll.c.s
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.s
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16.dir/tests/bench_sp_unroll.c.s
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.s
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-MINI_DATASET--sp-unroll16.dir/tests/bench_sp_unroll.c.s
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr.dir/tests/bench_sp_unroll.c.s
+	cd /home/thomas/Documents/eth/ba/code/all/snitch/hw/system/snitch_cluster/sw/build && $(MAKE) $(MAKESILENT) -f SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/build.make SSRInference/CMakeFiles/bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16.dir/tests/bench_sp_unroll.c.s
+.PHONY : tests/bench_sp_unroll.c.s
+
 tests/gemm.o: tests/gemm.c.o
 
 .PHONY : tests/gemm.o
@@ -4387,6 +4675,8 @@ help:
 	@echo "... run-rtl-bench-MINI_DATASET--mm-ssr"
 	@echo "... run-rtl-bench-MINI_DATASET--sp"
 	@echo "... run-rtl-bench-MINI_DATASET--sp-ssr"
+	@echo "... run-rtl-bench-MINI_DATASET--sp-unroll16"
+	@echo "... run-rtl-bench-MINI_DATASET--sp-unroll16-ssr"
 	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-2mm"
 	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-2mm-ssr"
 	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-2mm-ssrfriendly"
@@ -4401,6 +4691,8 @@ help:
 	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-mm-ssr"
 	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp"
 	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-ssr"
+	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16"
+	@echo "... run-rtl-bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr"
 	@echo "... run-rtl-bench-SMALL_DATASET--2mm"
 	@echo "... run-rtl-bench-SMALL_DATASET--2mm-ssr"
 	@echo "... run-rtl-bench-SMALL_DATASET--2mm-ssrfriendly"
@@ -4415,6 +4707,8 @@ help:
 	@echo "... run-rtl-bench-SMALL_DATASET--mm-ssr"
 	@echo "... run-rtl-bench-SMALL_DATASET--sp"
 	@echo "... run-rtl-bench-SMALL_DATASET--sp-ssr"
+	@echo "... run-rtl-bench-SMALL_DATASET--sp-unroll16"
+	@echo "... run-rtl-bench-SMALL_DATASET--sp-unroll16-ssr"
 	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-2mm"
 	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-2mm-ssr"
 	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-2mm-ssrfriendly"
@@ -4429,6 +4723,8 @@ help:
 	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-mm-ssr"
 	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp"
 	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-ssr"
+	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16"
+	@echo "... run-rtl-bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr"
 	@echo "... run-rtl-test-2mm"
 	@echo "... run-rtl-test-2mm-ssr"
 	@echo "... run-rtl-test-2mm-ssrfriendly"
@@ -4495,6 +4791,8 @@ help:
 	@echo "... bench-MINI_DATASET--mm-ssr"
 	@echo "... bench-MINI_DATASET--sp"
 	@echo "... bench-MINI_DATASET--sp-ssr"
+	@echo "... bench-MINI_DATASET--sp-unroll16"
+	@echo "... bench-MINI_DATASET--sp-unroll16-ssr"
 	@echo "... bench-MINI_DATASET-IS_RESTRICTED-2mm"
 	@echo "... bench-MINI_DATASET-IS_RESTRICTED-2mm-ssr"
 	@echo "... bench-MINI_DATASET-IS_RESTRICTED-2mm-ssrfriendly"
@@ -4509,6 +4807,8 @@ help:
 	@echo "... bench-MINI_DATASET-IS_RESTRICTED-mm-ssr"
 	@echo "... bench-MINI_DATASET-IS_RESTRICTED-sp"
 	@echo "... bench-MINI_DATASET-IS_RESTRICTED-sp-ssr"
+	@echo "... bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16"
+	@echo "... bench-MINI_DATASET-IS_RESTRICTED-sp-unroll16-ssr"
 	@echo "... bench-SMALL_DATASET--2mm"
 	@echo "... bench-SMALL_DATASET--2mm-ssr"
 	@echo "... bench-SMALL_DATASET--2mm-ssrfriendly"
@@ -4523,6 +4823,8 @@ help:
 	@echo "... bench-SMALL_DATASET--mm-ssr"
 	@echo "... bench-SMALL_DATASET--sp"
 	@echo "... bench-SMALL_DATASET--sp-ssr"
+	@echo "... bench-SMALL_DATASET--sp-unroll16"
+	@echo "... bench-SMALL_DATASET--sp-unroll16-ssr"
 	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-2mm"
 	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-2mm-ssr"
 	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-2mm-ssrfriendly"
@@ -4537,6 +4839,8 @@ help:
 	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-mm-ssr"
 	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-sp"
 	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-sp-ssr"
+	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16"
+	@echo "... bench-SMALL_DATASET-IS_RESTRICTED-sp-unroll16-ssr"
 	@echo "... benchmarkutil"
 	@echo "... benchmarkutil-ssr"
 	@echo "... linalg"
@@ -4634,6 +4938,9 @@ help:
 	@echo "... tests/bench_sp.o"
 	@echo "... tests/bench_sp.i"
 	@echo "... tests/bench_sp.s"
+	@echo "... tests/bench_sp_unroll.o"
+	@echo "... tests/bench_sp_unroll.i"
+	@echo "... tests/bench_sp_unroll.s"
 	@echo "... tests/gemm.o"
 	@echo "... tests/gemm.i"
 	@echo "... tests/gemm.s"

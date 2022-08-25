@@ -19,7 +19,7 @@ Idx Name              Size     VMA      Type
  13 .debug_info       000032a3 00000000 
  14 .debug_abbrev     00000bba 00000000 
  15 .debug_aranges    00000040 00000000 
- 16 .debug_line       00002a6e 00000000 
+ 16 .debug_line       00002a72 00000000 
  17 .debug_loc        000028df 00000000 
  18 .debug_ranges     00000360 00000000 
  19 .debug_str        00000ad0 00000000 
@@ -712,7 +712,7 @@ Disassembly of section .text:
 80000810: 13 01 01 03  	addi	sp, sp, 48
 80000814: 67 80 00 00  	ret
 
-80000818 <_vsnprintf.llvm.17592004524093383706>:
+80000818 <_vsnprintf.llvm.11632292163828655644>:
 ; {
 80000818: 13 01 01 f9  	addi	sp, sp, -112
 8000081c: 23 26 11 06  	sw	ra, 108(sp)
@@ -1720,7 +1720,7 @@ Disassembly of section .text:
 80001408: 13 01 01 07  	addi	sp, sp, 112
 8000140c: 67 80 00 00  	ret
 
-80001410 <_out_char.llvm.17592004524093383706>:
+80001410 <_out_char.llvm.11632292163828655644>:
 ;   if (character) {
 80001410: 63 04 05 0a  	beqz	a0, 0x800014b8 <.LBB2_8+0x18>
 ;     asm("csrr %0, mhartid" : "=r"(hartid));

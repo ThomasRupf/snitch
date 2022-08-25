@@ -27,8 +27,8 @@ add_compile_options(-funroll-loops)
 add_compile_options(-Wextra)
 add_compile_options(-static)
 # Enable SSR Inference ==> currently done per target in sw/SSRInference folder 
-#add_compile_options("SHELL:-mllvm -infer-ssr")
-#add_compile_options("SHELL:-mllvm -snitch-frep-inference") #enable frep loop inference
+# add_compile_options("SHELL:-mllvm -infer-ssr")
+# add_compile_options("SHELL:-mllvm -snitch-frep-inference") #enable frep loop inference
 # LLD doesn't support relaxation for RISC-V yet
 add_compile_options(-mno-relax)
 add_compile_options(-fopenmp)

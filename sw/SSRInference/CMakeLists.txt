@@ -14,7 +14,12 @@ if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     add_subdirectory(../snRuntime snRuntime)
 endif()
 
-list(APPEND SSRFlags "SHELL:-mllvm -infer-ssr" "SHELL:-mllvm -snitch-frep-inference")
+# add_compile_options("SHELL:-mllvm -ssr-aggressive-reassociate") <- for some reason cmake cannot pass flags to llvm backend (=llc?) probably because it compiles and links seperately ==> these flags are currently hardcoded
+# add_compile_options("SHELL:-mllvm -ssr-bubble-streams=8") 
+# add_compile_options("SHELL:-mllvm -post-RA-scheduler")
+# add_compile_options("SHELL:-mllvm -break-anti-dependencies=all")
+
+list(APPEND SSRFlags "SHELL:-mllvm -infer-ssr")
 
 include_directories(include)
 include_directories(${SNRUNTIME_INCLUDE_DIRS})
@@ -69,8 +74,8 @@ foreach(test file IN ZIP_LISTS TestNames TestFiles)
 endforeach()
 
 #Benchmarks
-list(APPEND BenchNames gemm 2mm 2mm-ssrfriendly 3mm 3mm-ssrfriendly sp mm)
-list(APPEND BenchFiles tests/gemm.c tests/2mm.c tests/2mm_ssrfriendly.c tests/3mm.c tests/3mm_ssrfriendly.c tests/bench_sp.c tests/bench_matmul.c)
+list(APPEND BenchNames gemm 2mm 2mm-ssrfriendly 3mm 3mm-ssrfriendly sp mm sp-unroll16)
+list(APPEND BenchFiles tests/gemm.c tests/2mm.c tests/2mm_ssrfriendly.c tests/3mm.c tests/3mm_ssrfriendly.c tests/bench_sp.c tests/bench_matmul.c tests/bench_sp_unroll)
 
 list(APPEND Datasets MINI_DATASET SMALL_DATASET)
 list(APPEND Modifiers "" IS_RESTRICTED)

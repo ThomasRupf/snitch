@@ -6,5 +6,5 @@ C_DEFINES = -DSMALL_DATASET -D__LINK_LLD -D__TOOLCHAIN_LLVM__
 
 C_INCLUDES = -I/home/thomas/Documents/eth/ba/code/all/snitch/sw/SSRInference/include -I/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/include -I/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/vendor -I/home/thomas/Documents/eth/ba/code/all/snitch/sw/snRuntime/vendor/riscv-opcodes
 
-C_FLAGS = -flto=thin -mcpu=snitch -mcmodel=medany -ffast-math -fno-builtin-printf -fno-common -fexperimental-new-pass-manager -ffunction-sections -funroll-loops -Wextra -static -mno-relax -fopenmp -menable-experimental-extensions -O3 -g -mllvm -infer-ssr -mllvm -snitch-frep-inference
+C_FLAGS = -flto=thin -mcpu=snitch -mcmodel=medany -ffast-math -fno-builtin-printf -fno-common -fexperimental-new-pass-manager -ffunction-sections -funroll-loops -Wextra -static -mno-relax -fopenmp -menable-experimental-extensions -O3 -g -mllvm -infer-ssr
 

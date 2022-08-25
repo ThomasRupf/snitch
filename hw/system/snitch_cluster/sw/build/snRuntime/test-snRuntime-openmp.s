@@ -2639,7 +2639,7 @@ Disassembly of section .text:
 80001ca8: 13 01 01 03  	addi	sp, sp, 48
 80001cac: 67 80 00 00  	ret
 
-80001cb0 <_vsnprintf.llvm.17592004524093383706>:
+80001cb0 <_vsnprintf.llvm.11632292163828655644>:
 ; {
 80001cb0: 13 01 01 f9  	addi	sp, sp, -112
 80001cb4: 23 26 11 06  	sw	ra, 108(sp)
@@ -3647,7 +3647,7 @@ Disassembly of section .text:
 800028a0: 13 01 01 07  	addi	sp, sp, 112
 800028a4: 67 80 00 00  	ret
 
-800028a8 <_out_char.llvm.17592004524093383706>:
+800028a8 <_out_char.llvm.11632292163828655644>:
 ;   if (character) {
 800028a8: 63 04 05 0a  	beqz	a0, 0x80002950 <.LBB2_8+0x18>
 ;     asm("csrr %0, mhartid" : "=r"(hartid));
@@ -5526,7 +5526,7 @@ Disassembly of section .text:
 80003ed4: 13 01 01 03  	addi	sp, sp, 48
 80003ed8: 67 80 00 00  	ret
 
-80003edc <__microtask_wrapper.llvm.1564610972365895457>:
+80003edc <__microtask_wrapper.llvm.4516570092310959897>:
 ; static void __microtask_wrapper(void *arg, uint32_t argc) {
 80003edc: 13 01 01 fd  	addi	sp, sp, -48
 ; uint32_t snrt_cluster_core_idx() { return _snrt_core_idx; }
@@ -5784,7 +5784,7 @@ Disassembly of section .text:
 800041ac: 13 01 01 03  	addi	sp, sp, 48
 800041b0: 67 80 00 00  	ret
 
-800041b4 <omp_get_thread_num.llvm.1564610972365895457>:
+800041b4 <omp_get_thread_num.llvm.4516570092310959897>:
 ;     return snrt_cluster_core_idx();
 800041b4: 17 f3 ff ff  	auipc	t1, 1048575
 800041b8: 67 00 43 71  	jr	1812(t1)
